@@ -1,71 +1,29 @@
 /* GENERAL */
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: 'Nunito', sans-serif;
+@mixin font {
+    font-family: 'Times New Roman', serif;
     font-size: 100%;
+    color: rgb(4, 86, 133);
 }
 
-.container {
-    padding: 6%;
+body,
+.nav-link {
+    @include font;
 }
 
-h1, 
-h2,
-h3, 
-h4, 
-h5, 
-h6 {
-    font-family: 'Playfair Display', serif;
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
-h1 {
-    font-size: 3.5rem;
-}
 
-h2 {
-    font-size: 1.5rem;
-}
 
-p,
-h3 {
-    line-height: 1.25;
-}
 
-h4 {
-    font-size: 1.25rem;
-    margin: 20px auto 10px auto;
-}
 
-h6 {
-    font-style: italic;
-}
 
-.title-block {
-    margin: 15rem auto 3rem auto;
-}
 
-.title {
-    margin: 2rem auto;
-    text-align: right;
-}
-
-.intro {
-    font-size: 1.2rem;
-}
-
-.intro-paragraph{
-    margin-bottom: 1rem;
-}
-
-.border {
-    border: 1px solid black;
-}
 
 :root {
     --mainColor: #c8f542;
