@@ -13,28 +13,28 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a href="index.html" class="navbar-brand">
-                <img src="img/gulfstream.jpg" width="auto" height="60">
+                <img src="img/gulfstream.jpg" class="logo" width="auto" height="60">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav navbar-center">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto" id="my-nav">
                     <li class="nav-item">
                         <a href="{{ .Obj.Rel "gulfstream.html" }}" class="nav-link">The Gulf Stream</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="{{ .Obj.Rel "background.html" }}" class="nav-link">Background</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="{{ .Obj.Rel "people.html" }}" class="nav-link">People</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="{{ .Obj.Rel "contact.html" }}" class="nav-link">Contact</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="{{ .Obj.Rel "login.html" }}" class="nav-link">Login</a>
                     </li>
                 </ul>
