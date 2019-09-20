@@ -48,12 +48,12 @@ body,
 .footer-copy,
 .address {
     line-height: 1.3;
-    margin-top: 2%;
+    margin-top: 5%;
+    padding-left: 5%;
 }
 
 .footer-copy {
-    padding-left: 7%;
-    padding-right: 10%;
+
 }
 
 .address {
@@ -95,6 +95,14 @@ body,
 
     .logo {
         padding-left: 20%;
+    }
+
+    .footer-copy,
+    .address {
+        line-height: 1.3;
+        margin-top: 2%;
+        padding-left: 7%;
+        padding-right: 10%;
     }
 
 }

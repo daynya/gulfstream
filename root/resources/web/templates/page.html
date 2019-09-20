@@ -46,7 +46,9 @@
             
             {{if index .Obj.Regions "footer"}}
             <footer>
-                {{index .Obj.Regions "footer"}}
+                <div class="d-flex justify-content-space-between">
+                    {{index .Obj.Regions "footer"}}
+                </div>
             </footer>
             {{end}}
         </div>
