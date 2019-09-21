@@ -16,9 +16,23 @@ body,
     margin-left: 10%;
 }
 
+.about {
+    background-color: #2052b0;
+    color: white;
+    padding: 5%;
+}
 
+.photo {
+    display: block;
+    margin: auto;
+    width: 100vw;
+}
 
 /* NAV */
+
+.navbar {
+    margin-bottom: 1%;
+}
 
 #navbarSupportedContent {
     margin-left: 5%;
@@ -32,11 +46,13 @@ body,
 #my-nav .nav-link {
     color: #2052b0;
     margin: auto 2rem;
+    transition: .5s;
 }
 
 #my-nav .nav-link:hover {
     text-decoration-line: underline;
     text-decoration-color: #b38507;
+    cursor: pointer;
 }
 
 
@@ -54,9 +70,6 @@ body,
     padding-left: 5%;
 }
 
-.footer-copy {
-    
-}
 
 .address {
     font-size: .8rem;
@@ -81,6 +94,15 @@ body,
     .footer-copy {
         margin-right: 7%;
     }
+
+}
+
+@media only screen and (min-width: 975px) {
+    
+    #my-nav .nav-link {
+        margin: auto 1rem;
+    }
+
 
 }
 
