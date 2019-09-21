@@ -7,9 +7,15 @@
 }
 
 body,
-.nav-link {
+.link {
     @include font;
 }
+
+.link-underline {
+    @include font;
+    text-decoration-line: underline;
+    text-decoration-color: #b38507;
+    cursor: pointer;}
 
 .logo {
     margin-top: 5%;
@@ -43,13 +49,13 @@ body,
     text-align: right;
 }
 
-#my-nav .nav-link {
+#my-nav .link {
     color: #2052b0;
     margin: auto 2rem;
     transition: .5s;
 }
 
-#my-nav .nav-link:hover {
+#my-nav .link:hover {
     text-decoration-line: underline;
     text-decoration-color: #b38507;
     cursor: pointer;
@@ -67,7 +73,10 @@ body,
 .address {
     line-height: 1.3;
     margin-top: 8%;
-    padding-left: 5%;
+}
+
+.footer-copy {
+    margin-left: 3%;
 }
 
 
@@ -92,17 +101,27 @@ body,
     }
 
     .footer-copy {
-        margin-right: 7%;
+        margin-right: 8%;
     }
+
 
 }
 
 @media only screen and (min-width: 975px) {
     
-    #my-nav .nav-link {
+    #my-nav .link {
         margin: auto 1rem;
     }
 
+    .address {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: 2%;
+    }
+
+    .footer-copy {
+        margin-right: 10%;
+    }
 
 }
 
@@ -114,12 +133,12 @@ body,
         justify-content: space-between;
     }
 
-    #my-nav .nav-link {
+    #my-nav .link {
         margin: auto 3rem;
     }
 
     .footer-copy {
-        padding-left: 7%;
+        padding-left: 4%;
         margin-right: 10%;
     }
 
@@ -155,7 +174,8 @@ body,
 
     .footer-copy {
         font-size: 1.2rem;
-        margin-left: 4%;
+        margin-left: 8%;
+        margin-right: 10%;
     }
 
     .address {
@@ -163,7 +183,7 @@ body,
         margin-left: 2%;
     }
 
-    #my-nav .nav-link {
+    #my-nav .link {
         font-size: 1.1rem;
     }
 
