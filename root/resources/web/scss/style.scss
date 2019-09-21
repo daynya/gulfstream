@@ -39,25 +39,29 @@ body,
     text-decoration-color: #b38507;
 }
 
+
 /* FOOTER */
 
 .footer {
     border-top: 10px solid #b38507;
+    width: 100vw;
 }
 
 .footer-copy,
 .address {
     line-height: 1.3;
-    margin-top: 5%;
+    margin-top: 8%;
     padding-left: 5%;
 }
 
 .footer-copy {
-
+    
 }
 
 .address {
     font-size: .8rem;
+    display: flex;
+    justify-content: center;
 }
 
 .phone {
@@ -66,21 +70,16 @@ body,
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 1400px) {
 
-    #my-nav {
-        margin-left: 5%;
-    }
-    
-    #navbarSupportedContent {
-        padding-left: 5%;
-    }
+@media only screen and (min-width: 450px) {
 
-    #my-nav .nav-link {
-        font-size: 1.1rem;
+    .footer-copy,
+    .address {
+        margin-top: 3%;
     }
 
 }
+
 
 @media only screen and (min-width: 1200px) {
 
@@ -93,16 +92,42 @@ body,
         margin: auto 3rem;
     }
 
-    .logo {
-        padding-left: 20%;
+    .footer-copy {
+        padding-left: 7%;
     }
 
     .footer-copy,
     .address {
-        line-height: 1.3;
         margin-top: 2%;
-        padding-left: 7%;
-        padding-right: 10%;
+    }
+
+    .address {
+        margin-left: 3%;
+    }
+
+    .logo {
+        padding-left: 20%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+    #my-nav {
+        margin-left: 5%;
+    }
+    
+    #navbarSupportedContent  {
+        padding-left: 5%;
+    }
+
+    .footer-copy {
+        margin-left: 4%;
+    }
+
+    #my-nav .nav-link {
+        font-size: 1.1rem;
     }
 
 }
