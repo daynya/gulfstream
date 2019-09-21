@@ -17,6 +17,10 @@ body,
     text-decoration-color: #b38507;
     cursor: pointer;}
 
+.link-underline:hover {
+    color: #b38507;
+}
+
 .logo {
     margin-top: 5%;
     margin-left: 10%;
@@ -32,6 +36,14 @@ body,
     display: block;
     margin: auto;
     width: 100vw;
+}
+
+.modal-title {
+    margin-top: 1rem;
+}
+
+.modal-content {
+    padding: 2%;
 }
 
 /* NAV */
