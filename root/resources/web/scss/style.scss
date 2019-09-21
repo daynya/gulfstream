@@ -78,6 +78,10 @@ body,
         margin-top: 3%;
     }
 
+    .footer-copy {
+        margin-right: 7%;
+    }
+
 }
 
 
@@ -94,6 +98,7 @@ body,
 
     .footer-copy {
         padding-left: 7%;
+        margin-right: 10%;
     }
 
     .footer-copy,
@@ -122,8 +127,18 @@ body,
         padding-left: 5%;
     }
 
+    .footer {
+        padding-right: 8%;
+    }
+
     .footer-copy {
+        font-size: 1.2rem;
         margin-left: 4%;
+    }
+
+    .address {
+        font-size: .9rem;
+        margin-left: 2%;
     }
 
     #my-nav .nav-link {
