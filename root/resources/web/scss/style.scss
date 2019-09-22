@@ -6,6 +6,10 @@
     color: #2052b0;
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 body,
 .link {
     @include font;
@@ -38,9 +42,22 @@ body,
     width: 100vw;
 }
 
-.people {
-    list-style: none;
+.title {
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.people-footer {
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.people-list {
+    font-size: .8rem;
     line-height: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 /* MODALS */
@@ -54,9 +71,9 @@ body,
 }
 
 .modal-img {
-    width: 25%;
+    width: 50%;
     height: auto;
-    margin: 0 5% 3% 0;
+    margin: 0 7% 3% 0;
 }
 
 .modal-text {
@@ -96,7 +113,6 @@ body,
 
 .footer {
     border-top: 10px solid #b38507;
-    width: 100vw;
 }
 
 .footer-copy,
@@ -134,8 +150,27 @@ body,
         margin-right: 8%;
     }
 
+    .people-footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .title {
+        font-size: 1.7rem;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .people-list li {
+        font-size: .8rem;
+    }
 
 }
+
+@media only screen and (min-width: 765px) {
+    
+}
+
 
 @media only screen and (min-width: 975px) {
     
@@ -151,6 +186,15 @@ body,
 
     .footer-copy {
         margin-right: 10%;
+    }
+
+    .modal-title {
+        font-size: 1.4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: 4%;
     }
 
 }
@@ -183,6 +227,11 @@ body,
 
     .logo {
         padding-left: 20%;
+    }
+
+    .people li {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
     }
 
 }
