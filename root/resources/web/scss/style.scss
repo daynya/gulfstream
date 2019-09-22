@@ -38,6 +38,13 @@ body,
     width: 100vw;
 }
 
+.people {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+/* MODALS */
+    
 .modal-title {
     margin-top: 1rem;
 }
@@ -45,6 +52,17 @@ body,
 .modal-content {
     padding: 2%;
 }
+
+.modal-img {
+    width: 25%;
+    height: auto;
+    margin: 0 5% 3% 0;
+}
+
+.modal-text {
+    font-size: 90%;
+}
+
 
 /* NAV */
 
