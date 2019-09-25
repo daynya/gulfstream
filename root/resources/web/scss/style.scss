@@ -3,7 +3,7 @@
 @mixin font {
     font-family: 'Times New Roman', serif;
     font-size: 100%;
-    color: #2052b0;
+    color: rgb(0, 51, 161);
 }
 
 .container-fluid {
@@ -18,11 +18,11 @@ body,
 .link-underline {
     @include font;
     text-decoration-line: underline;
-    text-decoration-color: #b38507;
+    text-decoration-color: rgb(139, 111, 75);
     cursor: pointer;}
 
 .link-underline:hover {
-    color: #b38507;
+    color: rgb(139, 111, 75);
 }
 
 .logo {
@@ -30,8 +30,12 @@ body,
     margin-left: 10%;
 }
 
+.video-container {
+    background-color: black;
+}
+
 .about {
-    background-color: #2052b0;
+    background-color:rgb(0, 51, 161);
     color: white;
     padding: 5%;
 }
@@ -40,6 +44,10 @@ body,
     display: block;
     margin: auto;
     width: 100vw;
+}
+
+.map-photo {
+    padding-right: 0;
 }
 
 .title {
@@ -58,15 +66,13 @@ body,
     margin-bottom: 5%;
 }
 
-
-
 .btn-outline-primary {
-    color: #2052b0;
-    border-color: #2052b0;
+    color:rgb(0, 51, 161);
+    border-color: rgb(0, 51, 161);
 }
 
 .btn-outline-primary:hover {
-    background-color: #2052b0;
+    background-color: rgb(0, 51, 161);
     color: white;
 }
 
@@ -107,14 +113,14 @@ body,
 }
 
 #my-nav .link {
-    color: #2052b0;
+    color: rgb(0, 51, 161);
     margin: auto 2rem;
     transition: .5s;
 }
 
 #my-nav .link:hover {
     text-decoration-line: underline;
-    text-decoration-color: #b38507;
+    text-decoration-color: rgb(139, 111, 75);
     cursor: pointer;
 }
 
@@ -122,7 +128,7 @@ body,
 /* FOOTER */
 
 .footer {
-    border-top: 10px solid #b38507;
+    border-top: 10px solid rgb(139, 111, 75);
 }
 
 .footer-copy,
