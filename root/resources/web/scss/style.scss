@@ -77,7 +77,7 @@ h2 {
 
 .title {
     @include accent-font;
-    font-size: 1.5rem;
+    font-size: .8rem;
     margin-top: 5%;
 }
 
@@ -179,17 +179,18 @@ h2 {
     margin-top: 8%;
 }
 .address {
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: flex;
-    justify-content: flex-start;
-    margin: 0 2%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 5%;
 }
 .people-footer {
     padding-left: 5%;
     margin-bottom: 5%;
 }
 .people-list {
-    font-size: .8rem;
+    font-size: .7rem;
     line-height: 1.5rem;
     list-style-type: none;
     padding: 0;
@@ -201,6 +202,16 @@ h2 {
 
 /* MEDIA QUERIES */
 
+@media only screen and (min-width: 360px) {
+    .people-list {
+        font-size: .8rem;
+        line-height: 1.6rem;
+    }
+    .title {
+        font-size: .9rem;
+    }
+}
+
 
 @media only screen and (min-width: 450px) {
     h2 {
@@ -211,16 +222,20 @@ h2 {
         margin-left: 7%;
     }
     .title {
-        font-size: 1.7rem;
-        margin-top: 7%;
-        margin-bottom: 3%;
+        font-size: 1.15rem;
+        margin: 8% 0 4% 0;
     }
     .people-list li {
-        font-size: .8rem;
+        font-size: 1rem;
+        line-height: 2rem;
     }
     .map {
         width: 350px;
         height: 250px;
+    }
+    .address {
+        margin: 2% 0;
+        justify-content: center;
     }
 }
 
@@ -232,8 +247,29 @@ h2 {
     .navbar {
         margin-right: 3%;
     }
+    .footer {
+        padding-right: 3%;
+    }
+    .home-footer,
+    .home-footer .footer-copy {
+        margin: 0;
+    }
+    .home-footer .footer-copy {
+        margin-top: 5%;
+    }
+    .home-footer .address {
+        margin-top: 3%;
+    }
     .address {
-        font-size: .9rem;
+        font-size: 1rem;
+        margin-top: 10%;
+        padding: 0;
+        justify-content: center;
+    }
+    .map {
+        width: 350px;
+        height: 250px;
+        margin: 10% 5% 0 0;
     }
     .about {
         padding: 8%;
@@ -250,8 +286,14 @@ h2 {
         padding: 4% 2% 2% 2%;
     }
     .people-footer {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+    }
+    .title {
+        margin: 5% 0 2% 0;
+        font-size: 1.3rem;
+    }
+    .people-list li {
+        font-size: .8rem;
     }
 }
 
@@ -280,9 +322,13 @@ h2 {
     }
     .address {
         display: flex;
-        justify-content: flex-end;
-        margin: 4% 2% 2% 2%;
-        font-size: 1rem;
+        justify-content: center;
+        margin-top: 15%;
+        font-size: 1.1rem;
+    }
+    .home-footer .address {
+        text-align: left;
+        margin-top: 5%;
     }
     .people li {
         line-height: 1.8rem;
@@ -290,9 +336,12 @@ h2 {
     #modal-btn.link {
         font-size: 1.25em;
     }
+    .map {
+        width: 450px;
+        height: 350px;
+        margin: 10% 5% 0 0;
+    }
 }
-
-
 
 @media only screen and (min-width: 1200px) {
     .footer-copy,
@@ -307,12 +356,19 @@ h2 {
     .home-footer {
         padding: 0;
     }
+    .home-footer .footer-copy {
+        padding-right: 5%;
+    }
+    .home-footer .address {
+        margin-top: 2%;
+    }
     .background-footer {
         padding: 4% 2% 2% 2%;
     }
     .address {
-        margin-left: 3%;
-        margin-top: 2%;
+        margin-top: 4%;
+        justify-content: flex-start;
+        text-align: left;
     }
     #modal-btn.link {
         font-size: 1.3em;
@@ -353,10 +409,13 @@ h2 {
     }
     .address {
         font-size: 1.2rem;
-        margin-left: 2%;
+
     }
     .about {
         padding: 4%;
+    }
+    .map {
+        margin-left: 20%;
     }
     #modal-btn.link {
         font-size: 1.4em;
