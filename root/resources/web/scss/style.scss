@@ -33,6 +33,7 @@ h2 {
 }
 
 .link-underline:hover {
+    text-decoration: none;
     color: rgb(139, 111, 75);
 }
 
@@ -75,6 +76,7 @@ h2 {
 }
 
 .title {
+    @include accent-font;
     font-size: 1.5rem;
     margin-top: 5%;
 }
@@ -107,21 +109,37 @@ h2 {
     margin-top: 1rem;
     @include accent-font;
 }
+
 .modal-content {
     padding: 2%;
 }
+
 .modal-img {
     width: 50%;
     height: auto;
     margin: 0 7% 3% 0;
 }
+
 .modal-text {
     font-size: 1rem;;
 }
+
 #modal-close-btn {
     @include accent-font;
     font-size: .8rem;
     color: rgb(139, 111, 75);
+    border-color: rgb(0, 51, 161);
+}
+
+#modal-close-btn:hover {
+    background-color: rgb(139, 111, 75);
+    color: white;
+}
+
+#modal-btn.link:hover {
+    border-bottom: solid 2px rgb(139, 111, 75);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -170,15 +188,15 @@ h2 {
     padding-left: 5%;
     margin-bottom: 5%;
 }
-.login-footer {
-    padding: 0 5%;
-}
 .people-list {
     font-size: .8rem;
     line-height: 1.5rem;
     list-style-type: none;
     padding: 0;
     margin-bottom: 0;
+}
+.login-footer {
+    padding: 0 5%;
 }
 
 /* MEDIA QUERIES */
@@ -223,6 +241,14 @@ h2 {
     .about p {
         font-size: 1.1rem;
     }
+    .background-footer,
+    .background-footer .footer-copy:first-child,
+    .background-footer .footer-copy {
+        margin: 0;
+    }
+    .background-footer {
+        padding: 4% 2% 2% 2%;
+    }
     .people-footer {
         padding-left: 10%;
         padding-right: 10%;
@@ -249,48 +275,57 @@ h2 {
     .footer-copy {
         margin: 4% 2% 2% 0;
     }
+    .background-footer {
+        padding: 4% 2% 2% 2%;
+    }
     .address {
         display: flex;
         justify-content: flex-end;
         margin: 4% 2% 2% 2%;
         font-size: 1rem;
     }
+    .people li {
+        line-height: 1.8rem;
+    }
+    #modal-btn.link {
+        font-size: 1.25em;
+    }
 }
 
 
 
 @media only screen and (min-width: 1200px) {
-
     .footer-copy,
-    .address {
+    .footer-copy p {
+        font-size: 1.3rem;
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    .footer-copy:first-child {
         margin-top: 2%;
+    }
+    .home-footer {
+        padding: 0;
+    }
+    .background-footer {
+        padding: 4% 2% 2% 2%;
     }
     .address {
         margin-left: 3%;
+        margin-top: 2%;
     }
-    .people li {
-        font-size: 1.1rem;
-        line-height: 1.7rem;
+    #modal-btn.link {
+        font-size: 1.3em;
     }
-     #my-nav .navbar-nav .nav-item .link {
-        font-size: 1.1rem;
+    #my-nav .navbar-nav .nav-item .link {
+        font-size: 1rem;
+        margin: 0 15px;
     }
 
 }
 
 
 @media only screen and (min-width: 1400px) {
-   
-    .footer {
-        padding-right: 8%;
-    }
-    .footer-copy {
-        font-size: 1.2rem;
-    }
-    .address {
-        font-size: .9rem;
-        margin-left: 2%;
-    }
     .logo {
         height: 70px;
     }
@@ -304,5 +339,29 @@ h2 {
     #my-nav .link {
         font-size: 1.1rem;
     }
-
+    .footer {
+        padding-right: 8%;
+    }
+    .footer-copy,
+    .footer-copy p {
+        font-size: 1.3rem;
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    .footer-copy:first-child {
+        margin-top: 2%;
+    }
+    .address {
+        font-size: 1.2rem;
+        margin-left: 2%;
+    }
+    .about {
+        padding: 4%;
+    }
+    #modal-btn.link {
+        font-size: 1.4em;
+    }
+    .people li {
+        line-height: 2rem;
+    }
 }
