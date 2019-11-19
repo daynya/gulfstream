@@ -90,7 +90,6 @@ h2 {
 
 .login {
     margin-bottom: 5%;
-    margin-left: 10%;
 }
 
 .btn-outline-primary {
@@ -199,6 +198,9 @@ h2 {
 .login-footer {
     padding: 0 5%;
 }
+.login {
+    justify-content: center;
+}
 
 /* MEDIA QUERIES */
 
@@ -285,6 +287,20 @@ h2 {
     .background-footer {
         padding: 4% 2% 2% 2%;
     }
+    .gulfstream-footer, 
+    .gulfstream-footer .footer-copy:first-child,
+    .gulfstream.footer .footer-copy {
+        margin: 0;
+    }
+    .gulfstream-footer {
+        padding: 4% 2% 2% 2%;
+    } 
+    .gulfstream-footer .address {
+        margin: 0;
+    }
+    .gulfstream-footer .footer-copy {
+        padding-right: 5%;
+    }
     .people-footer {
         padding-left: 5%;
     }
@@ -294,6 +310,9 @@ h2 {
     }
     .people-list li {
         font-size: .8rem;
+    }
+    .login-footer {
+        padding: 5%;
     }
 }
 
