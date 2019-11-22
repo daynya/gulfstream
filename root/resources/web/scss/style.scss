@@ -63,6 +63,7 @@ h2 {
     background-color:rgb(0, 51, 161);
     color: white;
     padding: 10%;
+    font-weight: 600;
 }
 
 .photo {
@@ -79,6 +80,10 @@ h2 {
     @include accent-font;
     font-size: .8rem;
     margin-top: 5%;
+}
+
+.values-title {
+    @include accent-font;
 }
 
 .map {
@@ -182,7 +187,16 @@ h2 {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 0 5%;
+    margin: 3% 5%;
+}
+.home-footer .footer-copy {
+    margin-bottom: 5%;
+}
+.gulfstream-footer {
+    padding: 0 5%;
+}
+.gulfstream-footer .footer-copy {
+    margin-bottom: 5%;
 }
 .people-footer {
     padding-left: 5%;
@@ -194,6 +208,16 @@ h2 {
     list-style-type: none;
     padding: 0;
     margin-bottom: 0;
+}
+.values-footer {
+    padding: 5%;
+}
+.values-footer .footer-copy {
+    margin: 2% 0 0 0;
+    padding: 5%;
+}
+.values-footer .footer-copy:first-child {
+    margin-top: 0;
 }
 .login-footer {
     padding: 0 5%;
@@ -231,6 +255,7 @@ h2 {
         font-size: 1rem;
         line-height: 2rem;
     }
+
     .map {
         width: 350px;
         height: 250px;
@@ -249,18 +274,19 @@ h2 {
     .navbar {
         margin-right: 3%;
     }
-    .footer {
-        padding-right: 3%;
-    }
     .home-footer,
-    .home-footer .footer-copy {
+    .home-footer .footer-copy,
+    .gulfstream-footer,
+    .gulfstream-footer .footer-copy {
         margin: 0;
     }
-    .home-footer .footer-copy {
+    .home-footer .footer-copy,
+    .gulfstream-footer .footer-copy {
         margin-top: 5%;
     }
-    .home-footer .address {
-        margin-top: 3%;
+    .home-footer .address,
+    .gulfstream-footer .address {
+        margin-top: 5%;
     }
     .address {
         font-size: 1rem;
@@ -273,12 +299,6 @@ h2 {
         height: 250px;
         margin: 10% 5% 0 0;
     }
-    .about {
-        padding: 8%;
-    }
-    .about p {
-        font-size: 1.1rem;
-    }
     .background-footer,
     .background-footer .footer-copy:first-child,
     .background-footer .footer-copy {
@@ -287,19 +307,11 @@ h2 {
     .background-footer {
         padding: 4% 2% 2% 2%;
     }
-    .gulfstream-footer, 
-    .gulfstream-footer .footer-copy:first-child,
-    .gulfstream.footer .footer-copy {
-        margin: 0;
+    .about {
+        padding: 8%;
     }
-    .gulfstream-footer {
-        padding: 4% 2% 2% 2%;
-    } 
-    .gulfstream-footer .address {
-        margin: 0;
-    }
-    .gulfstream-footer .footer-copy {
-        padding-right: 5%;
+    .about p {
+        font-size: 1.1rem;
     }
     .people-footer {
         padding-left: 5%;
@@ -332,6 +344,7 @@ h2 {
     #my-nav .navbar-nav .nav-item .link {
         padding: 5px;
         margin: 0 10px;
+        font-size: .75rem;
     }
     .footer-copy {
         margin: 4% 2% 2% 0;
@@ -346,7 +359,12 @@ h2 {
         font-size: 1.1rem;
         padding-left: 5%;
     }
-    .home-footer .address {
+    .home-footer,
+    .gulfstream-footer {
+        padding: 0 3%;
+    }
+    .home-footer .address,
+    .gulfstream-footer .address {
         text-align: left;
         margin-top: 5%;
     }
@@ -355,6 +373,12 @@ h2 {
     }
     #modal-btn.link {
         font-size: 1.25em;
+    }
+    .values-footer {
+        padding: 3%;
+    }
+    .values-footer .footer-copy {
+        margin: 0;
     }
     .map {
         width: 450px;
@@ -376,10 +400,12 @@ h2 {
     .home-footer {
         padding: 0;
     }
-    .home-footer .footer-copy {
+    .home-footer .footer-copy,
+    .gulfstream-footer .footer-copy {
         padding-right: 5%;
     }
-    .home-footer .address {
+    .home-footer .address,
+    .gulfstream-footer .address {
         margin-top: 2%;
     }
     .background-footer {
@@ -415,9 +441,6 @@ h2 {
     #my-nav .link {
         font-size: 1.1rem;
     }
-    .footer {
-        padding-right: 8%;
-    }
     .footer-copy,
     .footer-copy p {
         font-size: 1.3rem;
@@ -426,6 +449,13 @@ h2 {
     }
     .footer-copy:first-child {
         margin-top: 2%;
+    }
+    .home-footer,
+    .gulfstream-footer {
+        padding: 0 5%;
+    }
+    .values-footer {
+        padding-right: 4%;
     }
     .address {
         font-size: 1.2rem;
