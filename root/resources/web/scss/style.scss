@@ -264,6 +264,9 @@ button {
     .title {
         font-size: .9rem;
     }
+    .values-footer .footer-copy:first-child {
+        margin-top: 2%;
+    }
 }
 
 
@@ -345,6 +348,9 @@ button {
     .people-list li {
         font-size: .8rem;
     }
+    .values-footer .footer-copy:first-child {
+        margin-top: 0;
+    }
     .login-footer {
         padding: 5%;
     }
@@ -394,8 +400,25 @@ button {
     #modal-btn.link {
         font-size: 1.25em;
     }
+    .values-graphic {
+        max-width: 50%;
+    }
+    .values-title {
+        margin-top: 15%;
+    }
+    .values-footer:first-child {
+        padding-top: 0;
+    }
     .values-footer .footer-copy {
         margin: 0;
+        padding: 3%;
+    }
+    .values-footer ul {
+        margin-left: 2%;
+    }
+    .values-footer ul li {
+        font-size: 1rem;
+        margin-bottom: 5%;
     }
     .map {
         width: 450px;
@@ -445,6 +468,13 @@ button {
         font-size: 1rem;
         margin: 0 15px;
     }
+    .values-footer .footer-copy,
+    .values-footer .footer-copy:first-child {
+        margin: 3% 0 0 0;
+    }
+    .values-footer ul li {
+        font-size: 1.1rem;
+    }
     .people li {
         font-size: 1.1em;
         line-height: 2.5rem;
@@ -483,6 +513,9 @@ button {
     }
     .background-footer .footer-copy {
         margin-left: 0;
+    }
+    .values-footer ul {
+        margin-left: 5%;
     }
     .address {
         font-size: 1.2rem;
