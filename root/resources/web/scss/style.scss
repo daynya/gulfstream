@@ -14,6 +14,7 @@
 
 .container-fluid {
     padding: 0;
+    width: 100%;
 }
 
 body,
@@ -207,7 +208,7 @@ button {
 }
 .gulfstream-footer,
 .background-footer {
-    padding: 0 5%;
+    padding: 0 7%;
 }
 .people-footer {
     padding-left: 5%;
@@ -284,6 +285,10 @@ a.form-link {
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 360px) {
+    .gulfstream-footer,
+    .background-footer {
+        padding: 0 5%;
+    }
     .people-list {
         font-size: .8rem;
         line-height: 1.6rem;
@@ -555,7 +560,7 @@ a.form-link {
     }
     .address,
     .contact-footer .address {
-        margin-top: 4%;
+        margin-top: 5%;
         justify-content: flex-start;
         text-align: left;
     }
@@ -659,6 +664,9 @@ a.form-link {
     .people li {
         line-height: 2.7rem;
     }
+    .contact-footer .address {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -671,6 +679,12 @@ a.form-link {
 }
 
 @media only screen and (min-width: 1600px) {
+    .about {
+        line-height: 2rem;
+    }
+    .about h2 {
+        margin-bottom: 5%;
+    }
     .values-overlay {
         bottom: 10%;
     }
