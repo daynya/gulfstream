@@ -232,6 +232,9 @@ button {
 .values-footer .footer-copy:first-child {
     margin-top: 0;
 }
+.values-footer ul {
+    list-style: none;
+}
 .login-footer {
     padding: 0 5%;
 }
@@ -354,9 +357,6 @@ button {
         margin: 0 10px;
         font-size: .75rem;
     }
-    .footer-copy {
-        margin: 4% 2% 2% 0;
-    }
     .address {
         display: flex;
         justify-content: center;
@@ -368,7 +368,8 @@ button {
         margin-top: 10%;
     }
     .home-footer,
-    .gulfstream-footer {
+    .gulfstream-footer,
+    .background-footer {
         padding: 0 3%;
     }
     .home-footer .address,
@@ -399,23 +400,23 @@ button {
     .footer-copy,
     .footer-copy p {
         font-size: 1.3rem;
-        margin-left: 3%;
         margin-top: 0;
     }
     .footer-copy:first-child {
-        margin-top: 2%;
+        margin-top: 4%;
     }
-    .home-footer {
-        padding: 0;
+    .home-footer .footer-copy {
+        padding-left: 0;
     }
     .home-footer .footer-copy,
-    .gulfstream-footer .footer-copy {
+    .gulfstream-footer .footer-copy,
+    .background-footer .footer-copy {
         padding-right: 5%;
     }
     .home-footer .address,
     .gulfstream-footer .address,
     .background-footer .address {
-        margin-top: 2%;
+        margin-top: 4%;
     }
     .address,
     .contact-footer .address {
@@ -435,6 +436,10 @@ button {
     #my-nav .navbar-nav .nav-item .link {
         font-size: 1rem;
         margin: 0 15px;
+    }
+    .people li {
+        font-size: 1.1em;
+        line-height: 2.5rem;
     }
 
 }
@@ -483,6 +488,6 @@ button {
         font-size: 1.4em;
     }
     .people li {
-        line-height: 2rem;
+        line-height: 2.7rem;
     }
 }
