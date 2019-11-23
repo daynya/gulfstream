@@ -235,6 +235,7 @@ button {
 }
 .values-title {
     @include accent-font;
+    font-size: 1.3rem;
     text-align: center;
     margin-top: 5%;
 }
@@ -246,6 +247,19 @@ button {
 }
 .values-footer:first-child {
     padding-top: 5%;
+}
+.values-overlay {
+    display: none;
+}
+.values-copy-below {
+    padding: 10%;
+}
+.values-copy-below h4 {
+    @include accent-font;
+    font-size: 1.3rem;
+}
+.values-copy-below p {
+    font-size: 1.1rem;
 }
 .login-footer {
     padding: 0 5%;
@@ -285,6 +299,9 @@ button {
     .people-list li {
         font-size: 1rem;
         line-height: 2rem;
+    }
+    .values-copy-below {
+        padding: 8%;
     }
     .map {
         width: 350px;
@@ -351,11 +368,51 @@ button {
     .values-footer .footer-copy:first-child {
         margin-top: 0;
     }
+    .values-overlay {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+    }
+    .values-overlay h4,
+    .values-overlay p {
+        color: white;
+        font-weight: 500;
+    }
+    .values-overlay h4 {
+        @include accent-font;
+        font-size: .95rem;
+        border-bottom: 1px solid white;
+        margin-bottom: .3rem;
+    }
+    .values-overlay p {
+        font-size: .6rem;
+        margin-bottom: 0;
+    }
+    .values-copy-below {
+        display: none;
+    }
     .login-footer {
         padding: 5%;
     }
 }
 
+@media only screen and (min-width: 850px) {
+    .values-overlay {
+        bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .values-overlay {
+        bottom: 8%;
+    }
+    .values-overlay h4 {
+        font-size: 1.2rem;
+    }
+    .values-overlay p {
+        font-size: .7rem;
+    }
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -420,10 +477,31 @@ button {
         font-size: 1rem;
         margin-bottom: 5%;
     }
+    .values-overlay {
+        bottom: 3%;
+    }
+    .values-overlay h4 {
+        font-size: 1.1rem;
+    }
+    .values-overlay p {
+        font-size: .8rem;
+    }
     .map {
         width: 450px;
         height: 350px;
         margin: 10% 5% 0 0;
+    }
+}
+
+@media only screen and (min-width: 1075px) {
+    .values-overlay {
+        bottom: 9%;
+    }
+    .values-overlay h4 {
+        font-size: 1.2rem;
+    }
+    .values-overlay p {
+        font-size: .8rem;
     }
 }
 
@@ -475,6 +553,16 @@ button {
     .values-footer ul li {
         font-size: 1.1rem;
     }
+    .values-overlay {
+        bottom: 4%;
+    }
+    .values-overlay h4 {
+        font-size: 1.4rem;
+        margin-bottom: .6rem;
+    }
+    .values-overlay p {
+        font-size: .95rem;
+    }
     .people li {
         font-size: 1.1em;
         line-height: 2.5rem;
@@ -482,6 +570,11 @@ button {
 
 }
 
+@media only screen and (min-width: 1300px) {
+    .values-overlay {
+        bottom: 10%;
+    }
+}
 
 @media only screen and (min-width: 1400px) {
     .logo {
@@ -517,6 +610,12 @@ button {
     .values-footer ul {
         margin-left: 5%;
     }
+    .values-overlay {
+        bottom: 8%;
+    }
+    .values-overlay p {
+        font-size: 1rem;
+    }
     .address {
         font-size: 1.2rem;
     }
@@ -530,5 +629,26 @@ button {
     }
     .people li {
         line-height: 2.7rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .values-overlay {
+        bottom: 10%;
+    }
+    .values-overlay p {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .values-overlay {
+        bottom: 10%;
+    }
+    .values-overlay h4 {
+        font-size: 1.6rem;
+    }
+    .values-overlay p{
+        font-size: 1.2rem;
     }
 }
