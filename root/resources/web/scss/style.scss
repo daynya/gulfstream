@@ -91,7 +91,7 @@ h2 {
 
 .map {
     display: block;
-    margin: 5% auto;
+    margin: 10% auto 5% auto;
     width: 300px;
     height: 200px;
 }
@@ -124,11 +124,11 @@ h2 {
 .modal-img {
     width: 50%;
     height: auto;
-    margin: 2% 7% 2% 0;
+    margin: 1% 7% 2% 0;
 }
 
 .modal-text {
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 
 #modal-close-btn,
@@ -140,9 +140,9 @@ button {
 }
 
 #modal-close-btn:hover,
+.close:hover,
 button:hover {
-    background-color: rgb(188, 155, 106);;
-    color: white;
+    background-color: #ededed;
 }
 
 #modal-btn.link:hover {
@@ -177,6 +177,9 @@ button {
     text-decoration: none;
     cursor: pointer;
 }
+.navbar-toggler:hover {
+    background-color: white;
+}
 
 /* FOOTER */
 
@@ -206,7 +209,6 @@ button {
 .background-footer {
     padding: 0 5%;
 }
-
 .people-footer {
     padding-left: 5%;
     margin-bottom: 5%;
@@ -252,7 +254,7 @@ button {
     display: none;
 }
 .values-copy-below {
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 }
 .values-copy-below h4 {
     @include accent-font;
@@ -262,11 +264,22 @@ button {
     font-size: 1.1rem;
 }
 .login-footer {
-    padding: 0 5%;
+    padding: 8%;
 }
-.login {
-    justify-content: center;
+.login-footer div {
+    margin-bottom: 5%;
 }
+a.form-link {
+    @include font;
+    color: rgb(0, 93, 170);
+}
+.contact-footer .address {
+    margin-bottom: 5%
+}
+.contact-footer .contact {
+    display: block;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -300,8 +313,14 @@ button {
         font-size: 1rem;
         line-height: 2rem;
     }
+    .modal-text {
+        line-height: 1.5rem;
+    }
     .values-copy-below {
-        padding: 8%;
+        padding: 6% 6% 0 6%;
+    }
+    .login-footer {
+        padding: 5%;
     }
     .map {
         width: 350px;
@@ -347,7 +366,10 @@ button {
     .map {
         width: 300px;
         height: 250px;
-        margin: 10% 5% 0 0;
+        margin: 10% 0 0 0;
+    }
+    .contact-footer .address {
+        font-size: .9rem;
     }
     .about {
         padding: 8%;
@@ -391,33 +413,37 @@ button {
     .values-copy-below {
         display: none;
     }
-    .login-footer {
-        padding: 5%;
+    .login-footer div {
+        margin-bottom: 3%;
+    }
+    a.form-link {
+        font-size: 1.1rem;
     }
 }
 
 @media only screen and (min-width: 850px) {
     .values-overlay {
-        bottom: 10%;
-    }
-}
-
-@media only screen and (min-width: 850px) {
-    .values-overlay {
-        bottom: 8%;
-    }
-    .values-overlay h4 {
-        font-size: 1.2rem;
+        bottom: 5%;
     }
     .values-overlay p {
-        font-size: .7rem;
+        font-size: .65rem;
+    }
+    .values-overlay h4 {
+        font-size: 1em;
+    }
+    .map {
+        width: 350px;
     }
 }
 
 @media only screen and (min-width: 992px) {
 
     .modal-title {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+    .modal-text {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
     }
     .title {
         font-size: 2rem;
@@ -481,7 +507,7 @@ button {
         bottom: 3%;
     }
     .values-overlay h4 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .values-overlay p {
         font-size: .8rem;
@@ -542,6 +568,13 @@ button {
     #modal-btn.link {
         font-size: 1.3em;
     }
+    .modal-text {
+        line-height: 2rem;
+    }
+    .people li {
+        font-size: 1.1em;
+        line-height: 2.5rem;
+    }
     #my-nav .navbar-nav .nav-item .link {
         font-size: 1rem;
         margin: 0 15px;
@@ -562,10 +595,6 @@ button {
     }
     .values-overlay p {
         font-size: .95rem;
-    }
-    .people li {
-        font-size: 1.1em;
-        line-height: 2.5rem;
     }
 
 }
@@ -644,6 +673,18 @@ button {
 @media only screen and (min-width: 1600px) {
     .values-overlay {
         bottom: 10%;
+    }
+    .values-overlay h4 {
+        font-size: 1.6rem;
+    }
+    .values-overlay p{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .values-overlay {
+        bottom: 15%;
     }
     .values-overlay h4 {
         font-size: 1.6rem;
