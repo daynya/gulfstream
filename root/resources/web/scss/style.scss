@@ -182,6 +182,7 @@ button {
     background-color: white;
 }
 
+
 /* FOOTER */
 
 .footer {
@@ -454,8 +455,8 @@ a.form-link {
         font-size: 2rem;
         margin-top: 4%;
     }
-    .navbar-expand-lg .navbar-collapse{
-        justify-content: space-evenly;
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
     }
     #my-nav .navbar-nav .nav-item .link {
         padding: 5px;
@@ -581,7 +582,7 @@ a.form-link {
         line-height: 2.5rem;
     }
     #my-nav .navbar-nav .nav-item .link {
-        font-size: 1rem;
+        font-size: .9rem;
         margin: 0 15px;
     }
     .values-footer .footer-copy,
@@ -679,6 +680,10 @@ a.form-link {
 }
 
 @media only screen and (min-width: 1600px) {
+    #my-nav .navbar-nav .nav-item .link {
+        font-size: 1rem;
+        margin: 0 30px;
+    }
     .about {
         line-height: 2rem;
     }
@@ -697,6 +702,10 @@ a.form-link {
 }
 
 @media only screen and (min-width: 1800px) {
+    #my-nav .navbar-nav .nav-item .link {
+        font-size: 1.1rem;
+        margin: 0 35px;
+    }
     .values-overlay {
         bottom: 15%;
     }
@@ -705,5 +714,15 @@ a.form-link {
     }
     .values-overlay p{
         font-size: 1.2rem;
+    }
+}
+
+//IE
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .values-overlay {
+        display: none;
+    }
+    .values-copy-below {
+        display: block;
     }
 }
