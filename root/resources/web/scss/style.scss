@@ -87,7 +87,7 @@ h2 {
 .title {
     @include accent-font;
     font-size: .8rem;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .map {
@@ -209,7 +209,7 @@ button {
 }
 .gulfstream-footer,
 .background-footer {
-    padding: 0 7%;
+    padding: 0 10%;
 }
 .people-footer {
     padding-left: 5%;
@@ -223,7 +223,7 @@ button {
     margin-bottom: 0;
 }
 .values-footer .footer-copy {
-    padding: 5%;
+    padding: 3% 5%;
 }
 .values-footer .footer-copy:first-child {
     margin-top: 0;
@@ -246,7 +246,7 @@ button {
     max-width: 30%;
     height: auto;
     display: block;
-    margin: 2% auto;
+    margin: auto;
 }
 .values-overlay {
     display: none;
@@ -254,9 +254,9 @@ button {
 .values-copy-below {
     padding: 10% 10% 0 10%;
 }
-.values-copy-below h4 {
+.values-copy-below h2 {
     @include accent-font;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
 .values-copy-below p {
     font-size: 1.1rem;
@@ -284,7 +284,7 @@ a.form-link {
 @media only screen and (min-width: 360px) {
     .gulfstream-footer,
     .background-footer {
-        padding: 0 5%;
+        padding: 0 6%;
     }
     .people-list {
         font-size: .8rem;
@@ -329,7 +329,7 @@ a.form-link {
         height: 250px;
     }
     .address {
-        margin: 2% 0;
+        margin: 3% 0;
         justify-content: center;
     }
 }
@@ -361,15 +361,13 @@ a.form-link {
     }
     .address,
     .contact-footer .address {
-        font-size: 1rem;
-        margin-top: 10%;
         padding: 0;
         justify-content: center;
     }
     .map {
         width: 300px;
         height: 250px;
-        margin: 10% 0 0 0;
+        margin: 8% 0 0 0;
     }
     .about {
         padding: 8%;
@@ -381,7 +379,7 @@ a.form-link {
         padding-left: 5%;
     }
     .title {
-        margin: 5% 0 2% 0;
+        margin: 3% 0 1% 0;
         font-size: 1.3rem;
     }
     .people-list li {
@@ -395,12 +393,12 @@ a.form-link {
         position: absolute;
         bottom: 5%;
     }
-    .values-overlay h4,
+    .values-overlay h2,
     .values-overlay p {
         color: white;
         font-weight: 500;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         @include accent-font;
         font-size: .95rem;
         border-bottom: 1px solid white;
@@ -428,7 +426,7 @@ a.form-link {
     .values-overlay p {
         font-size: .65rem;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1em;
     }
     .map {
@@ -460,12 +458,8 @@ a.form-link {
     .address {
         display: flex;
         justify-content: center;
-        margin-top: 15%;
         font-size: 1.1rem;
         padding-left: 5%;
-    }
-    .contact-footer .address {
-        margin-top: 10%;
     }
     .home-footer,
     .gulfstream-footer,
@@ -473,9 +467,9 @@ a.form-link {
         padding: 0 3%;
     }
     .home-footer .address,
-    .gulfstream-footer .address {
-        text-align: left;
-        margin-top: 5%;
+    .gulfstream-footer .address,
+    .contact-footer .address {
+        margin-top: 3%;
     }
     .people li {
         line-height: 1.8rem;
@@ -494,7 +488,7 @@ a.form-link {
     }
     .values-footer .footer-copy {
         margin: 0;
-        padding: 3%;
+        padding: 2% 3%;
     }
     .values-footer ul {
         margin-left: 2%;
@@ -506,7 +500,7 @@ a.form-link {
     .values-overlay {
         bottom: 3%;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1.2rem;
     }
     .values-overlay p {
@@ -515,7 +509,7 @@ a.form-link {
     .map {
         width: 450px;
         height: 350px;
-        margin: 10% 5% 0 0;
+        margin: 7% 3% 0 3%;
     }
 }
 
@@ -523,7 +517,7 @@ a.form-link {
     .values-overlay {
         bottom: 9%;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1.2rem;
     }
     .values-overlay p {
@@ -554,14 +548,13 @@ a.form-link {
     .background-footer .address {
         margin-top: 3%;
     }
-    .address,
-    .contact-footer .address {
-        margin-top: 5%;
+    .address {
+        margin-top: 3%;
         justify-content: flex-start;
         text-align: left;
     }
     .map {
-        margin-bottom: 10%;
+        margin: 7% 5% 5% 10%;
     }
     .about {
         padding: 4%;
@@ -586,7 +579,7 @@ a.form-link {
     .values-overlay {
         bottom: 4%;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1.4rem;
         margin-bottom: .6rem;
     }
@@ -659,7 +652,7 @@ a.form-link {
     .map {
         width: 500px;
         height: 350px;
-        margin-left: 10%;
+        margin: 5% 0 0 10%;
     }
     #modal-btn.link {
         font-size: 1.4em;
@@ -692,7 +685,7 @@ a.form-link {
     .values-overlay {
         bottom: 10%;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1.6rem;
     }
     .values-overlay p{
@@ -708,7 +701,7 @@ a.form-link {
     .values-overlay {
         bottom: 15%;
     }
-    .values-overlay h4 {
+    .values-overlay h2 {
         font-size: 1.6rem;
     }
     .values-overlay p{
