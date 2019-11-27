@@ -698,6 +698,12 @@ button {
     }
 }
 
+@media only screen and (min-width: 1900px) {
+    .about p {
+        font-size: 1.3rem;
+    }
+}
+ 
 //IE
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .values-overlay {
