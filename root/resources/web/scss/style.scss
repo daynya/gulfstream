@@ -59,6 +59,28 @@ h2 {
     background-color: white;
 }
 
+/* FOOTER */
+
+.footer {
+    border-top: 10px solid rgb(188, 155, 106);
+    padding: 0 4%;
+}
+.footer-copy p {
+    font-size: 1.2rem;
+}
+.footer-copy:first-child {
+    margin-top: 8%;
+}
+.home-footer .footer-copy,
+.gulfstream-footer .footer-copy,
+.background-footer .footer-copy {
+    margin-bottom: 5%;
+}
+.gulfstream-footer,
+.background-footer {
+    padding: 0 10%;
+}
+
 /* HOME */
 
 .video-container {
@@ -240,27 +262,7 @@ button {
     border: 1px solid rgb(0, 93, 170);
 
 }
-/* FOOTER */
 
-.footer {
-    border-top: 10px solid rgb(188, 155, 106);
-    padding: 0 4%;
-}
-.footer-copy p {
-    font-size: 1.2rem;
-}
-.footer-copy:first-child {
-    margin-top: 8%;
-}
-.home-footer .footer-copy,
-.gulfstream-footer .footer-copy,
-.background-footer .footer-copy {
-    margin-bottom: 5%;
-}
-.gulfstream-footer,
-.background-footer {
-    padding: 0 10%;
-}
 
 /* MEDIA QUERIES */
 
